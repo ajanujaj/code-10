@@ -1,0 +1,12 @@
+import time 
+
+s_time=time.time()
+
+p=[0,4,8,4,0,1]
+a=p.count(0)
+p=list(filter((0).__ne__,p))
+while a!=0:
+    p.append(0)
+    a-=1
+print(p)
+print("--- %s seconds ---" % (time.time() - s_time))
